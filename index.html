@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><span>✦</span> Eno's Portfolio</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navMenu">
+                <li><a class="nav-link active" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="projects.html">Projects</a></li>
+                <li><a class="nav-link" href="planner.html">Planner</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero reveal fade-up" id="home">
+            <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="images/unnamed.jpg">
+                <source src="C:\Users\ENO\Downloads\My Portfolio\videos\lady-typing-demo.mp4.mp4" type="video/mp4">
+            </video>
+            <img class="hero-fallback" src="images/unnamed.jpg" alt="Fallback hero image">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-intro">Premium Portfolio • Student Developer</p>
+                    <h1 class="hero-title">
+                        <span>ENO-OBONG</span>
+                        <span>OKON</span>
+                        <span>JOHN</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span>Software Engineering Student</span>
+                        <span>Frontend Developer</span>
+                        <span>Aspiring Full Stack Developer</span>
+                        <span>Aspiring DevOps Engineer</span>
+                    </div>
+                    <p>
+                        Hello, I am Eno-obong John. Welcome to my academic portfolio where I showcase my projects,
+                        technical skills, and academic journey with a polished, modern student-dash experience.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="projects.html" class="btn btn-primary">Explore My Work</a>
+                        <a href="contact.html" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="images/unnamed.jpg" alt="Portrait of Eno-obong John">
+                </div>
+            </div>
+        </section>
+
+        <section class="biography reveal fade-up" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">About Me</p>
+                <h2>Building thoughtful digital experiences.</h2>
+            </div>
+            <p>
+                I am a Software Engineering student with a passion for technology and creating practical digital solutions.
+                I enjoy learning new skills and applying them through projects that strengthen my knowledge of web development and programming.
+            </p>
+            <p>
+                I have experience working with HTML, CSS, JavaScript, and Python, and I am continuously improving my technical and problem-solving skills.
+                I also have experience in data analytics, video editing, and virtual assistant tools. Beyond coding, I value teamwork, communication, and continuous learning.
+            </p>
+            <div class="stats-grid">
+                <article class="stat-card reveal fade-left">
+                    <h3 data-counter="6">0+</h3>
+                    <p>Projects explored</p>
+                </article>
+                <article class="stat-card reveal fade-up">
+                    <h3 data-counter="4">0+</h3>
+                    <p>Core technologies</p>
+                </article>
+                <article class="stat-card reveal fade-right">
+                    <h3 data-counter="100">0%</h3>
+                    <p>Growth mindset</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="skills-preview reveal fade-up" id="skills">
+            <div class="section-heading">
+                <p class="eyebrow">Technical Skills</p>
+                <h2>Tools I use to build modern experiences.</h2>
+            </div>
+            <ul class="skill-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Linux</li>
+                <li>SQL</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+
+        <section class="page-hero reveal fade-up" id="projects">
+            <p class="eyebrow">Featured Projects</p>
+            <h1>Projects shaped by curiosity, learning, and design.</h1>
+            <p>
+                Here are the academic and creative builds that showcase my growth as a student developer.
+            </p>
+        </section>
+
+        <section class="project-grid">
+            <article class="project-card coral-card reveal fade-up">
+                <h3>Shoe Brand Website</h3>
+                <p>
+                    A responsive web experience created to explore modern product presentation and clean user flow.
+                </p>
+                <a href="videos/shoe%20brand%20demo.mp4" class="chip-link" target="_blank" rel="noopener noreferrer">Watch Demo</a>
+            </article>
+
+            <article class="project-card teal-card reveal fade-up">
+                <h3>Student Management System</h3>
+                <p>
+                    Designed to practice structured data layouts and simple, practical web interfaces.
+                </p>
+                <a href="images/tly3hLxdtcfSDEuBhC8T1okugpgtpf6piFYImFWAmWC1b9pgjjPoJsme7ub0RUok21gwHRldmeZ2DCEyQEwcjldC21WEPnlIzFT2rIq2WpsrKNy-pRwe7WC9PzPik-v-z0AUkcZySHbn2jwy2_M3_a9L1Cv7zC8orWGa5T-NlRo.jpg" class="chip-link">View Project</a>
+            </article>
+
+            <article class="project-card purple-card reveal fade-up">
+                <h3>Finance Tracker</h3>
+                <p>
+                    A budgeting-inspired concept that helped me improve layout thinking and interactive design.
+                </p>
+                <a href="images/cDtpvM_YcFxFbzcoFHw2OB-UGj0vAwEO4Ub-eV1B6BcwP4WKeOPNGluZUcaNHrctWF4Hmi-AHn-a7z5bhC1b9fJPuOBs0whFLSV3jHgZDR4_bYYzhXzKbohYFQgcuxvTX_YVRbNKlmzKscEA12oSTWV_OOJPECxnDO2KoV2_u8A.jpg" class="chip-link">View Project</a>
+            </article>
+
+            <article class="project-card orange-card reveal fade-up">
+                <h3>Weather Dashboard</h3>
+                <p>
+                    A visual dashboard concept focused on clarity, information hierarchy, and design consistency.
+                </p>
+                <a href="images/L_O9BKNHOo7yy3V-gqmC8gdWurb_908gJINGxbf8DtNeHtpQDzsc7VOwjRo7sGFoL62a_1VmqKUw6agaL6DCI4x7HC0UmKi6VDPds6Guy3lDS5-7abdashTjwAFgH3KEQ3meInAuHmOL9W2SbMAK-rThtLbPKwCMe5-8ma1vXQ4.jpg" class="chip-link">View Project</a>
+            </article>
+        </section>
+
+        <section class="academic-highlights reveal fade-up" id="academics">
+            <div class="section-heading">
+                <p class="eyebrow">Academic Highlights</p>
+                <h2>My academic journey so far.</h2>
+            </div>
+            <div class="highlights-grid">
+                <article class="highlight-card">
+                    <div class="highlight-icon">🎓</div>
+                    <h3>Medicine & Surgery</h3>
+                    <p>Studied at VN Karazin University, Kharkov, Ukraine.</p>
+                    <span>2021</span>
+                </article>
+                <article class="highlight-card">
+                    <div class="highlight-icon">💻</div>
+                    <h3>Software Engineering</h3>
+                    <p>Currently pursuing Software Engineering at Miva Open University.</p>
+                    <span>2025 - 2028</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="home-contact reveal fade-up" id="contact">
+            <h1>Get In Touch</h1>
+            <p class="contact-intro">
+                Thank you for visiting my portfolio. If you have any questions, feedback, internship opportunities,
+                or would simply like to connect, feel free to send me a message.
+            </p>
+
+            <div class="home-contact-container">
+                <div class="home-contact-form">
+                    <form id="contactForm" action="mailto:enoobongjohn@example.com" method="post" enctype="text/plain">
+                        <div class="input-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="input-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="home-contact-info">
+                    <h2>Contact Information</h2>
+                    <p><i class="fa-solid fa-envelope"></i><strong>Email:</strong> johnenoobong1999@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i><strong>Phone:</strong> +2348149900183</p>
+                    <p><i class="fa-solid fa-location-dot"></i><strong>Location:</strong> Lagos, Nigeria</p>
+                    <p><i class="fa-solid fa-user-graduate"></i><strong>Status:</strong> Software Engineering Student</p>
+                    <h3>Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="http://www.youtube.com/@ENNY.J" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        <a href="mailto:johnenoobong1999@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Eno-obong John</p>
+        <p>Student Portfolio Website</p>
+    </footer>
+
+    <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="js/script.js"></script>
+</body>
+</html>

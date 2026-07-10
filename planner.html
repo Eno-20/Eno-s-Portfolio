@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo"><span>✦</span> Eno's Portfolio</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navMenu">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link" href="projects.html">Projects</a></li>
+                <li><a class="nav-link active" href="planner.html">Planner</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="planner-page">
+        <section class="planner-hero">
+            <h1>Academic Planner</h1>
+            <p>Stay organized by planning your study goals, assignments, deadlines, and daily progress in one place.</p>
+        </section>
+
+        <section class="planner-dashboard">
+            <article class="dashboard-card">
+                <p class="eyebrow">Today</p>
+                <h3 id="todayDate">Loading date...</h3>
+            </article>
+            <article class="dashboard-card">
+                <p class="eyebrow">Current Time</p>
+                <h3 id="currentTime">Loading time...</h3>
+            </article>
+            <article class="dashboard-card">
+                <p class="eyebrow">Progress</p>
+                <h3 id="plannerPercent">0%</h3>
+                <div class="progress-bar"><span id="plannerProgressBar"></span></div>
+            </article>
+        </section>
+
+        <section class="planner-card">
+            <div class="planner-form">
+                <h2>Add a New Task</h2>
+                <div class="input-group planner-input-group">
+                    <label for="taskInput">Task Title</label>
+                    <input type="text" id="taskInput" placeholder="e.g. Complete JavaScript project">
+                </div>
+                <div class="input-group planner-input-group">
+                    <label for="taskCategory">Task Type</label>
+                    <select id="taskCategory">
+                        <option value="Assignment">📝 Assignment</option>
+                        <option value="Lecture">🎓 Lecture</option>
+                        <option value="Quiz">🧠 Quiz</option>
+                        <option value="Lab Practical">🧪 Lab Practical</option>
+                        <option value="Coding Practice">💻 Coding Practice</option>
+                        <option value="Web Development">🌐 Web Development</option>
+                        <option value="Linux Practice">🐧 Linux Practice</option>
+                        <option value="DevOps Study">⚙️ DevOps Study</option>
+                        <option value="Reading">📖 Reading</option>
+                        <option value="Research">🔬 Research</option>
+                        <option value="Personal Study">📘 Personal Study</option>
+                        <option value="Group Project">👥 Group Project</option>
+                        <option value="Revision">📚 Revision</option>
+                        <option value="Examination">🗓️ Examination</option>
+                        <option value="Meeting">🤝 Meeting</option>
+                        <option value="Presentation">📊 Presentation</option>
+                        <option value="Internship Application">💼 Internship Application</option>
+                        <option value="Portfolio Update">🖼️ Portfolio Update</option>
+                        <option value="GitHub Commit">🐙 GitHub Commit</option>
+                        <option value="LinkedIn Post">🔗 LinkedIn Post</option>
+                        <option value="Exercise">🏃 Exercise</option>
+                        <option value="Prayer / Devotion">🙏 Prayer / Devotion</option>
+                        <option value="Personal Goals">🎯 Personal Goals</option>
+                    </select>
+                </div>
+                <div class="input-group planner-input-group">
+                    <label for="taskDate">Due Date</label>
+                    <input type="date" id="taskDate">
+                </div>
+                <div class="input-group planner-input-group">
+                    <label for="taskPriority">Priority</label>
+                    <select id="taskPriority">
+                        <option value="High">🔴 High</option>
+                        <option value="Medium" selected>🟡 Medium</option>
+                        <option value="Low">🟢 Low</option>
+                    </select>
+                </div>
+                <div class="planner-actions">
+                    <button id="addTaskBtn" class="btn btn-primary">Add Task</button>
+                    <button id="clearCompletedBtn" class="clear-completed-btn">Clear Completed</button>
+                </div>
+            </div>
+
+            <div class="planner-list-wrap">
+                <div class="planner-summary">
+                    <h2>My Tasks</h2>
+                    <div class="summary-grid">
+                        <div class="summary-pill"><strong id="totalTasks">0</strong>Total Tasks</div>
+                        <div class="summary-pill"><strong id="completedTasks">0</strong>Completed</div>
+                        <div class="summary-pill"><strong id="pendingTasks">0</strong>Pending</div>
+                    </div>
+                    <div class="filters">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search task...">
+                        </div>
+                        <div class="task-filter">
+                            <select id="filterSelect">
+                                <option value="all">All Tasks</option>
+                                <option value="completed">Completed</option>
+                                <option value="pending">Pending</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p id="taskCount">0 tasks added</p>
+                </div>
+                <ul id="taskList" class="task-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Thanks for visiting my portfolio!</p>
+        <p>© 2026 Eno-obong John</p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="js/script.js"></script>
+    <script src="js/planner.js"></script>
+</body>
+</html>
